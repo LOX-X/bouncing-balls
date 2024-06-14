@@ -16,6 +16,7 @@ btn.addEventListener("click", function () {
     this.disabled = true;
 });
 
+
 let balls = [];
 for (let i = 0; i < 1 ; i++) {
   const ball = new Ball(20,canvas)
