@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(70, 86, 99);
+}
+
+#canvas{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(95, 95, 95);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.controlls{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: solid 5px gray;
+    width: 300px;
+    height: 700px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.controlls label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+.controlls label div{
+    display: flex;
+    align-items: center;
+}
+
+.controlls label div b{
+    margin-left: 3px;
+}
+.button{
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(117, 134, 148);
+}
+
+.btn:hover{
+    border: solid 1px white;
+    background-color: rgb(87, 121, 148);
+    cursor: pointer;
+}
+
+.runing{
+    background-color: rgb(87, 148, 92);
+}
+
+.stop{
+    background-color: rgb(148, 87, 87);
+}
