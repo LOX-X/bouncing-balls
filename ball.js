@@ -1,11 +1,11 @@
 export class Ball{
-    constructor(radius,canvas){
+    constructor(radius,speed,canvas){
         this.canvas = canvas
         this.x = Math.random() * (canvas.width - 2 * radius) + radius;
-        this.y = Math.random() * (canvas.width - 2 * radius) + radius;
+        this.y = Math.random() * (canvas.height - 2 * radius) + radius;
         this.radius = radius;
-        this.dx = 2;
-        this.dy = 2;
+        this.dx = (Math.random() - 0.5) * speed;
+        this.dy = (Math.random() - 0.5) * speed;
 
     }
 
@@ -26,6 +26,5 @@ export class Ball{
           }
         this.x += this.dx;
         this.y += this.dy;
-
     }
 }

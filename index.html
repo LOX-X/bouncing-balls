@@ -10,12 +10,17 @@
     <div class="container">
         <canvas id="canvas"></canvas>
         <div class="controlls">
-            <label >Balls Size:<div><input type="range" value="5"><b>0</b></div></label>
-            <label >Balls Speed:<div><input type="range" value="5"><b>0</b></div></label>
-            <label >Balls Count:<div><input type="range" value="5"><b>0</b></div></label>
-            <div class="button">
-                <button class="btn">Start</button>
+            <label >Balls Size:<div><input type="range" min="5" max="100" value="20" oninput='changeSize(event)' ><b id="size">20</b></div></label>
+            <label >Balls Speed:<div><input type="range" min="1" max="20" value="2" oninput='changeSpeed(event)'><b id="speed">2</b></div></label>
+            <label >Balls Count:<div><input type="range" min="1" max="100" value="5" oninput='changeCount(event)'><b id="count">5</b></div></label>
+            <div class="note">
+                <p>"Note": Restart the game after u change the values</p>
             </div>
+            <div class="button">
+                <button class="start-btn btn">Start</button>
+                <button class="stop-btn btn" disabled="true">Stop</button>
+                <button class="restart-btn btn" disabled="true">Restart</button>
+                </div>
         </div>
     </div>
     <script type="module" src="app.js"></script>

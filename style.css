@@ -45,11 +45,16 @@ body{
     margin-left: 3px;
 }
 .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
     bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
-
+}
+.button button{
+    margin: 10px;
 }
 
 .btn{
@@ -72,4 +77,8 @@ body{
 
 .stop{
     background-color: rgb(148, 87, 87);
+}
+
+.note{
+    text-align: center;
 }
